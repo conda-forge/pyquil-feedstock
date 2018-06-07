@@ -14,12 +14,15 @@ Summary: A Python library for quantum programming using Quil
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pyquil-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyquil-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pyquil-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pyquil-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyquil/badges/version.svg)](https://anaconda.org/conda-forge/pyquil)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyquil/badges/downloads.svg)](https://anaconda.org/conda-forge/pyquil)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pyquil-green.svg)](https://anaconda.org/conda-forge/pyquil) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyquil.svg)](https://anaconda.org/conda-forge/pyquil) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyquil.svg)](https://anaconda.org/conda-forge/pyquil) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyquil.svg)](https://anaconda.org/conda-forge/pyquil) |
 
 Installing pyquil
 =================

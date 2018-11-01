@@ -24,7 +24,7 @@ requirements:
     - pip
 
   run:
-    - python
+    - python >= 3.6
     - numpy
     - six
     - antlr-python-runtime

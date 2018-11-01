@@ -1,6 +1,6 @@
 {% set name = "pyquil" %}
-{% set version = "1.9.0" %}
-{% set sha256 = "e41323b3a947a1fd4bcbb8c839c9ee7452e68fbbc97d2d63ca6c87b2da6b5bf5" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "dbf13504e0fa5c34a625d61ebadf7b36f82e29646ca31baa43ab24b9d6d5cea7" %}
 
 package:
   name: {{ name|lower }}
@@ -11,10 +11,6 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
-  # The pyQuil setup.py includes superfluous requirements
-  patches:
-    - remove-setup-requirements.patch
-
 build:
   noarch: python
   number: 0
@@ -23,8 +19,8 @@ build:
     - pyquil-config-setup = pyquil.setup.pyquil_config_setup:main
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.6
     - pip
 
   run:
@@ -33,12 +29,15 @@ requirements:
     - six
     - antlr-python-runtime
     - requests
+    - contextvars
+    - networkx
+    - dataclasses
+    - rpcq
 
 test:
   imports:
-    - pyquil.api
+    - pyquil
     - pyquil.gates
-    - pyquil.quil
 
 about:
   home: http://forest.rigetti.com

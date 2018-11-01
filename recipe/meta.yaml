@@ -19,12 +19,12 @@ build:
     - pyquil-config-setup = pyquil.setup.pyquil_config_setup:main
 
 requirements:
-  build:
-    - python
+  host:
+    - python >= 3.6
     - pip
 
   run:
-    - python >=3.6
+    - python
     - numpy
     - six
     - antlr-python-runtime

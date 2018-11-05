@@ -12,8 +12,10 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch: python
-  number: 0
+  # Note: This package *should* be noarch but we need to conditionally
+  # include the backport packages. Ref gh-6
+  # noarch: python
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - pyquil-config-setup = pyquil.setup.pyquil_config_setup:main
@@ -29,9 +31,9 @@ requirements:
     - six
     - antlr-python-runtime
     - requests
-    - contextvars
     - networkx
-    - dataclasses
+    - contextvars  # [py36]
+    - dataclasses  # [py36]
     - rpcq
 
 test:

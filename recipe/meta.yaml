@@ -15,6 +15,7 @@ build:
   # Note: This package *should* be noarch but we need to conditionally
   # include the backport packages. Ref gh-6
   # noarch: python
+  skip: True  # [py2k]
   number: 1
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:

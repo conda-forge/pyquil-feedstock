@@ -33,8 +33,8 @@ requirements:
     - antlr-python-runtime
     - requests
     - networkx
-    - contextvars  # [py36]
-    - dataclasses  # [py36]
+    - contextvars  # [py <= 36]
+    - dataclasses  # [py <= 36]
     - rpcq
 
 test:

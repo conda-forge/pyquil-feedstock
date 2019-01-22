@@ -1,6 +1,6 @@
 {% set name = "pyquil" %}
-{% set version = "2.0.0" %}
-{% set sha256 = "dbf13504e0fa5c34a625d61ebadf7b36f82e29646ca31baa43ab24b9d6d5cea7" %}
+{% set version = "2.2.1" %}
+{% set sha256 = "e0a93d1ebf2518cbf4dd1b2bf9be7d43af9bca51bbf489c91042a74c11d3e64f" %}
 
 package:
   name: {{ name|lower }}
@@ -13,10 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
-  entry_points:
-    - pyquil-config-setup = pyquil.setup.pyquil_config_setup:main
 
 requirements:
   host:
@@ -29,10 +27,9 @@ requirements:
     - six
     - antlr-python-runtime
     - requests
-    - contextvars
     - networkx
-    - dataclasses
     - rpcq
+    - immutables==0.6
 
 test:
   imports:

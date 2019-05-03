@@ -1,6 +1,6 @@
 {% set name = "pyquil" %}
-{% set version = "2.7.1" %}
-{% set sha256 = "6466db8feccc1c82880a3a2363f055fdcea45272fdade10750bb67308020e0a2" %}
+{% set version = "2.7.2" %}
+{% set sha256 = "b9694524713a828148cccc4f862f669ce3ba28fd2d11993ddd69bd1eb3504ddc" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:

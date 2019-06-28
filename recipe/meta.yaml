@@ -1,6 +1,6 @@
 {% set name = "pyquil" %}
-{% set version = "2.9.0" %}
-{% set sha256 = "5c2dd458efd3ff0648a58cae7a793db7e5f29f4e9b52b7a045c59aa8125c1ff0" %}
+{% set version = "2.9.1" %}
+{% set sha256 = "4bc4fa3efea9cc78b26a215b87e6a38463cd575addf0d0cb24750532ddbf93b6" %}
 
 package:
   name: {{ name|lower }}

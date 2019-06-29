@@ -117,5 +117,4 @@ Feedstock Maintainers
 =====================
 
 * [@karalekas](https://github.com/karalekas/)
-* [@mpharrigan](https://github.com/mpharrigan/)
 

@@ -27,7 +27,7 @@ requirements:
     - six
     - antlr-python-runtime
     - requests
-    - networkx
+    - networkx >=2.0.0
     - rpcq >=3.0.0
     - immutables ==0.6
 

@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -27,8 +27,8 @@ requirements:
     - six
     - antlr-python-runtime
     - requests
-    - networkx
-    - rpcq
+    - networkx >=2.0.0
+    - rpcq >=3.0.0
     - immutables ==0.6
 
 test:

@@ -25,7 +25,7 @@ requirements:
     - python
     - numpy
     - six
-    - antlr-python-runtime
+    - antlr-python-runtime >=4.7.2,<4.8
     - requests
     - networkx >=2.0.0
     - rpcq >=3.0.0

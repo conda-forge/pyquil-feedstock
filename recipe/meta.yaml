@@ -1,6 +1,6 @@
 {% set name = "pyquil" %}
-{% set version = "2.17.0" %}
-{% set sha256 = "bf0a433e7a04fe760ea055ba36737c6d81ba83c1a0297ca2f1d417279993367f" %}
+{% set version = "2.18.0" %}
+{% set sha256 = "10ec2349203de51e5cdfdf7a7ca1c6600028fe7328d00813b13f269b12af0328" %}
 
 package:
   name: {{ name|lower }}
@@ -24,7 +24,6 @@ requirements:
   run:
     - python
     - numpy
-    - six
     - antlr-python-runtime >=4.7.2,<4.8
     - requests
     - networkx >=2.0.0
@@ -40,8 +39,8 @@ about:
   home: http://forest.rigetti.com
   license: Apache-2.0
   license_family: Apache
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
-  summary: 'A Python library for quantum programming using Quil'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  summary: A Python library for quantum programming using Quil
   doc_url: http://pyquil.readthedocs.io/en/latest/
   dev_url: https://github.com/rigetticomputing/pyquil
 

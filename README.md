@@ -5,11 +5,13 @@ Home: http://forest.rigetti.com
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyquil-feedstock/blob/master/LICENSE.txt)
 
 Summary: A Python library for quantum programming using Quil
 
+Development: https://github.com/rigetticomputing/pyquil
 
+Documentation: http://pyquil.readthedocs.io/en/latest/
 
 Current build status
 ====================

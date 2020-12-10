@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyquil-feedstoc
 
 Summary: A Python library for quantum programming using Quil
 
-Development: https://github.com/rigetti/pyquil
+Development: https://github.com/rigetticomputing/pyquil
 
 Documentation: http://pyquil.readthedocs.io/en/latest/
 

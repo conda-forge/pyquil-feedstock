@@ -1,5 +1,5 @@
 {% set name = "pyquil" %}
-{% set version = "3.2.0" %}
+{% set version = "3.2.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyquil-{{ version }}.tar.gz
-  sha256: e0f1b3580ec3abb5e7097ecbdda4d0064eeaa8ff055622055cbf4ae0d4386a64
+  sha256: 6ae46a38bf6d7d4acee4c3f2a90c49b3b644d97754699548d3ab6a128055c6c4
 
 build:
   number: 0

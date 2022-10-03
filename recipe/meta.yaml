@@ -1,5 +1,5 @@
 {% set name = "pyquil" %}
-{% set version = "3.3.1" %}
+{% set version = "3.3.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyquil-{{ version }}.tar.gz
-  sha256: 9559274664ea505533b4971d59a0933d12fc320228f73b0d40f57676f9b476b5
+  sha256: bda66f2609b41f54bd9a6c3a5f6e007662e07320f1869c9f4568a3b2eac051f0
 
 build:
   number: 0
@@ -21,12 +21,14 @@ requirements:
     - poetry-core >=1.0.0
     - python >=3.7,<4.0
   run:
+    - types-python-dateutil >=2.8.19,<3.0.0
+    - types-retry >=0.9.9,<0.10.0
     - importlib-metadata >=3.7.3,<5.0.0
     - lark >=0.11.1,<0.12.0
     - networkx >=2.5,<3.0
-    - numpy >=1.20,<2.0
+    - numpy >=1.21,<2.0
     - python >=3.7,<4.0
-    - qcs-api-client >=0.20.13,<0.22.0
+    - qcs-api-client >=0.21.0,<0.22.0
     - retry >=0.9.2,<0.10.0
     - rpcq >=3.10.0,<4.0.0
     - scipy >=1.6.1,<2.0.0

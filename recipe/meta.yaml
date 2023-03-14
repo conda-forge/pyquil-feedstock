@@ -1,5 +1,5 @@
 {% set name = "pyquil" %}
-{% set version = "3.3.4" %}
+{% set version = "3.3.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyquil-{{ version }}.tar.gz
-  sha256: 7590e7a1c956d22a68520db9e922c797972f90fcc834590104eaa010562f5bf2
+  sha256: fc78cc0a099ee115f9b9a52e3d56a6a956328aed407030f19636bbae2fae981a
 
 build:
   number: 0
@@ -21,22 +21,17 @@ requirements:
     - poetry-core >=1.0.0
     - python >=3.7,<4.0
   run:
-    - ipython ^7.21.0optionaltrue
-    - nbsphinx ^0.8.6optionaltrue
-    - recommonmark ^0.7.1optionaltrue
-    - sphinx ^4.0.2optionaltrue
-    - sphinx_rtd_theme ^0.5.2optionaltrue
-    - types-python-dateutil ^2.8.19
-    - types-retry ^0.9.9
-    - importlib-metadata >=3.7.3,<5python<3.8
-    - lark ^0.11.1
-    - networkx ^2.5
-    - numpy ^1.21
+    - types-python-dateutil >=2.8.19,<3.0.0
+    - types-retry >=0.9.9,<0.10.0
+    - importlib-metadata >=3.7.3,<5.0.0
+    - lark >=0.11.1,<0.12.0
+    - networkx >=2.5,<3.0
+    - numpy >=1.21,<2.0
     - python >=3.7,<4.0
     - qcs-api-client >=0.21.0,<0.22.0
-    - retry ^0.9.2
-    - rpcq ^3.10.0
-    - scipy ^1.6.1
+    - retry >=0.9.2,<0.10.0
+    - rpcq >=3.10.0,<4.0.0
+    - scipy >=1.6.1,<2.0.0
   run_constrained:
     - ipython >=7.21.0,<8.0.0
 

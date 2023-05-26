@@ -1,5 +1,5 @@
 {% set name = "pyquil" %}
-{% set version = "3.5.1" %}
+{% set version = "3.5.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyquil-{{ version }}.tar.gz
-  sha256: 3d34eb91d23a3c8573f92df7443d36afe082015ae849d94c00820b3fbdac416d
+  sha256: c0f16f0cd2dfea28a1027f168167f9bfa44220a17ad5c0d0543ae9545cffa558
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
     - poetry-core >=1.0.0
     - python >=3.7,<4.0
   run:
+    - tenacity >=8.2.2,<9.0.0
     - deprecated >=1.2.13,<2.0.0
     - types-deprecated >=1.2.9,<2.0.0
     - types-python-dateutil >=2.8.19,<3.0.0

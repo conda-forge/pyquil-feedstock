@@ -1,5 +1,5 @@
 {% set name = "pyquil" %}
-{% set version = "3.5.4" %}
+{% set version = "4.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyquil-{{ version }}.tar.gz
-  sha256: 4fe65c83a4cf9164d3c7ddb314029d71b7388fb22fb56a1ba8f4dd3c1bb1d9a6
+  sha256: fbec8893115d1b831eb7b07a117ada6339506b8e4f7f7338f6e263a152fff7a8
 
 build:
   number: 0
@@ -21,6 +21,10 @@ requirements:
     - poetry-core >=1.0.0
     - python >=3.7,<4.0
   run:
+    - matplotlib-inline >=0.1.6,<0.2.0
+    - packaging >=23.1.0,<24.0.0
+    - pydantic >=1.10.7,<2.0.0
+    - qcs-sdk-python 0.12.2
     - tenacity >=8.2.2,<9.0.0
     - deprecated >=1.2.13,<2.0.0
     - types-deprecated >=1.2.9,<2.0.0
@@ -29,11 +33,11 @@ requirements:
     - importlib-metadata >=3.7.3,<5
     - lark >=0.11.1,<0.12.0
     - networkx >=2.5
-    - numpy >=1.21.0,<2.0.0
+    - numpy >=1.22.0,<2.0.0
     - python >=3.7,<4.0
     - qcs-api-client >=0.21.0,<0.22.0
     - rpcq >=3.10.0,<4.0.0
-    - scipy >=1.6.1,<2.0.0
+    - scipy >=1.7.3,<2.0.0
   run_constrained:
     - ipython >=7.21.0,<8.0.0
 

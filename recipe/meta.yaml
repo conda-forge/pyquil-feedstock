@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyquil-{{ version }}.tar.gz
-  sha256: fd5d65ad4fba788c232c8f7e18cab6a83ecc2514dc6eb4da4dd3db86668b2ddf
+  url: https://github.com/rigetti/pyquil/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 6c95024c0eaea2ae2da367aeed38033940d1f605687a356eae72eb296dfcad43
 
 build:
   number: 0
@@ -44,7 +44,6 @@ requirements:
 test:
   imports:
     - pyquil
-    - pyquil._parser
     - pyquil.gates
   commands:
     - pip check

@@ -1,5 +1,5 @@
 {% set name = "pyquil" %}
-{% set version = "4.0.3" %}
+{% set version = "4.10.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/rigetti/pyquil/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 6c95024c0eaea2ae2da367aeed38033940d1f605687a356eae72eb296dfcad43
+  sha256: c609210379d05453c289e7c99c15582aeecb1a510cd4b4cb419826c11506bd7a
 
 build:
   number: 0
@@ -21,10 +21,10 @@ requirements:
     - poetry-core >=1.0.0
     - python >=3.7,<4.0
   run:
-    - matplotlib-inline >=0.1.6,<0.2.0
+    - matplotlib-inline <0.2.0,>=0.1.6
     - packaging >=23.1.0,<24.0.0
     - pydantic >=1.10.7,<2.0.0
-    - qcs-sdk-python 0.12.8
+    - qcs-sdk-python 0.17.8
     - tenacity >=8.2.2,<9.0.0
     - deprecated >=1.2.13,<2.0.0
     - types-deprecated >=1.2.9,<2.0.0

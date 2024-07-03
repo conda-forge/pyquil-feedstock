@@ -21,14 +21,23 @@ requirements:
     - poetry-core >=1.0.0
     - python >=3.9,<=3.14
   run:
+    - deprecated >=1.2.14,<2.0.0
+    - importlib-metadata >=3.7.3,<5
+    - lark >=0.11.1,<0.12.0
+    - matplotlib-inline <0.2.0,>=0.1.7
     - networkx >=2.5
     - numpy >=1.25.0,<2.0.0
     - packaging >=23.1.0,<24.0.0
     - python >=3.9,<=3.14
+    - qcs-api-client >=0.21.0,<0.22.0
     - qcs-sdk-python 0.17.9
     - rpcq >=3.11.0,<4.0.0
     - scipy >=1.11.0,<2.0.0
+    - tenacity >=8.2.2,<9.0.0
     - types-deprecated >=1.2.9,<2.0.0
+    - types-python-dateutil >=2.8.19,<3.0.0
+    - types-retry >=0.9.9,<0.10.0
+    - typing-extensions
   run_constrained:
     - ipython >=7.21.0,<8.0.0
 

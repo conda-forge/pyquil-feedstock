@@ -1,5 +1,5 @@
 {% set name = "pyquil" %}
-{% set version = "4.10.0" %}
+{% set version = "4.12.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/rigetti/pyquil/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: c609210379d05453c289e7c99c15582aeecb1a510cd4b4cb419826c11506bd7a
+  sha256: 2548f3b0c25c7d29cd3b5cae4fd8849a13179dabf343835f0deada33ed64cf04
   patches:
     - fix-python-3.21-req.patch
 
@@ -23,18 +23,18 @@ requirements:
     - poetry-core >=1.0.0
     - python >=3.8,<3.13
   run:
-    - deprecated >=1.2.13,<2.0.0
+    - deprecated >=1.2.14,<2.0.0
     - importlib-metadata >=3.7.3,<5
     - lark >=0.11.1,<0.12.0
-    - matplotlib-inline >=0.1.6,<0.2.0
+    - matplotlib-inline <0.2.0,>=0.1.7
     - networkx >=2.5
-    - numpy >=1.22.0,<2.0.0
+    - numpy >=1.25.0,<2.0.0
     - packaging >=23.1.0,<24.0.0
     - python >=3.8,<3.13
     - qcs-api-client >=0.21.0,<0.22.0
-    - qcs-sdk-python 0.17.8
-    - rpcq >=3.10.0,<4.0.0
-    - scipy >=1.7.3,<2.0.0
+    - qcs-sdk-python 0.18.0
+    - rpcq >=3.11.0,<4.0.0
+    - scipy >=1.11.0,<2.0.0
     - tenacity >=8.2.2,<9.0.0
     - types-deprecated >=1.2.9,<2.0.0
     - types-python-dateutil >=2.8.19,<3.0.0

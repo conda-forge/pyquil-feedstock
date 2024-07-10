@@ -9,8 +9,8 @@ package:
 source:
   url: https://github.com/rigetti/pyquil/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 2548f3b0c25c7d29cd3b5cae4fd8849a13179dabf343835f0deada33ed64cf04
-  patches:
-    - fix-python-3.21-req.patch
+  # patches:
+  #  - fix-python-3.21-req.patch
 
 build:
   number: 0

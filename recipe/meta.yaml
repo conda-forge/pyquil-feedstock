@@ -1,5 +1,5 @@
 {% set name = "pyquil" %}
-{% set version = "4.13.0" %}
+{% set version = "4.14.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/rigetti/pyquil/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 57fccb03678e78132348c086c89c825e78ddd2e2cdd4bd9c2629f020f4daf316
+  sha256: 02f086d2ff33b9974df28b57f27c4c269c468897732d6068dcdb1183b4065cc4
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
     - poetry-core >=1.0.0
     - python >=3.8,<3.13
   run:
+    - quil >=0.11.2
     - deprecated >=1.2.14,<2.0.0
     - importlib-metadata >=3.7.3,<5
     - lark >=0.11.1,<0.12.0
@@ -30,7 +31,7 @@ requirements:
     - packaging >=23.1.0,<24.0.0
     - python >=3.8,<3.13
     - qcs-api-client >=0.21.0,<0.22.0
-    - qcs-sdk-python 0.19.0
+    - qcs-sdk-python 0.19.2
     - rpcq >=3.11.0,<4.0.0
     - scipy >=1.11.0,<2.0.0
     - tenacity >=8.2.2,<9.0.0

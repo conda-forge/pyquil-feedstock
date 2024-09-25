@@ -1,5 +1,5 @@
 {% set name = "pyquil" %}
-{% set version = "4.14.2" %}
+{% set version = "4.14.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/rigetti/pyquil/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 0b77750907f408f1caee98912973d74f9af03adeed8928d506dbaf98b0b04937
+  sha256: 585151ed9fac102f467c6ca7b9ff3f1992bacb63b98bc430e765eca8b328b20f
 
 build:
   number: 0
@@ -31,7 +31,7 @@ requirements:
     - packaging >=23.1.0,<24.0.0
     - python >=3.9,<4.0
     - qcs-api-client >=0.21.0,<0.22.0
-    - qcs-sdk-python >=0.19.2
+    - qcs-sdk-python >=0.20.1
     - rpcq >=3.11.0,<4.0.0
     - scipy >=1.11.0,<2.0.0
     - tenacity >=8.2.2,<9.0.0

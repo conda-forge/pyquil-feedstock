@@ -22,7 +22,7 @@ requirements:
     - poetry-core >=1.0.0
     - python {{ python_min }}
   run:
-    - quil >=0.11.2
+    - quil >=0.13.2
     - deprecated >=1.2.14,<2.0.0
     - importlib-metadata >=3.7.3,<5
     - lark >=0.11.1,<0.12.0

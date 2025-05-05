@@ -1,5 +1,5 @@
 {% set name = "pyquil" %}
-{% set version = "4.16.1" %}
+{% set version = "4.16.2" %}
 
 {% set python_min = 3.9 %}
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/rigetti/pyquil/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 33c2c407bc4545872fb5abbba0146745a43629cac07d85f6b979425e1f5c9c97
+  sha256: c18c63e5bf6151f1cfa214544edf32cb345f17cad598e3b3b59ad8eb13dd44cc
 
 build:
   number: 0
@@ -28,8 +28,8 @@ requirements:
     - lark >=0.11.1,<0.12.0
     - matplotlib-inline <0.2.0,>=0.1.7
     - networkx >=2.5
-    - numpy >=1.25.0,<2.0.0
-    - packaging >=23.1.0,<24.0.0
+    - numpy >=1.26,<3
+    - packaging >=23.1
     - python >={{ python_min }}
     - qcs-sdk-python >=0.20.1
     - rpcq >=3.11.0,<4.0.0

@@ -1,5 +1,5 @@
 {% set name = "pyquil" %}
-{% set version = "4.16.1" %}
+{% set version = "4.17.0" %}
 
 {% set python_min = 3.9 %}
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/rigetti/pyquil/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 33c2c407bc4545872fb5abbba0146745a43629cac07d85f6b979425e1f5c9c97
+  sha256: 4a78b5cd7dc1aeee252b74d380d7e3fa27685e8bd77b63d1d2ae0ebc3d5a7a65
 
 build:
   number: 0
@@ -22,16 +22,16 @@ requirements:
     - poetry-core >=1.0.0
     - python {{ python_min }}
   run:
-    - quil >=0.15.3
+    - quil >=0.15.3,<0.18
     - deprecated >=1.2.14,<2.0.0
     - importlib-metadata >=3.7.3,<5
     - lark >=0.11.1,<0.12.0
     - matplotlib-inline <0.2.0,>=0.1.7
     - networkx >=2.5
-    - numpy >=1.25.0,<2.0.0
-    - packaging >=23.1.0,<24.0.0
+    - numpy >=1.26,<3
+    - packaging >=23.1
     - python >={{ python_min }}
-    - qcs-sdk-python >=0.20.1
+    - qcs-sdk-python >=0.20.1,<0.22
     - rpcq >=3.11.0,<4.0.0
     - scipy >=1.11.0,<2.0.0
     - tenacity >=8.2.2,<9.0.0

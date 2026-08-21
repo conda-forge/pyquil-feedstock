@@ -1,7 +1,7 @@
 {% set name = "pyquil" %}
 {% set version = "4.18.0" %}
 
-{% set python_min = 3.9 %}
+{% set python_min = 3.11 %}
 
 package:
   name: {{ name|lower }}

@@ -1,5 +1,5 @@
 {% set name = "pyquil" %}
-{% set version = "4.21.0" %}
+{% set version = "4.22.0" %}
 
 {% set python_min = 3.11 %}
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/rigetti/pyquil/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 7e204f76155ea320a5a4efe2e96791d4f6285a3bcd618b3c2b798c3f4ccc71c8
+  sha256: 0e84beaa63614ff09f65b03dc1da134362aae223ec2e50dfd7c8a2a56fdc70a0
 
 build:
   number: 0

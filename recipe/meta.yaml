@@ -1,5 +1,5 @@
 {% set name = "pyquil" %}
-{% set version = "4.22.0" %}
+{% set version = "4.23.0" %}
 
 {% set python_min = 3.11 %}
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/rigetti/pyquil/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 0e84beaa63614ff09f65b03dc1da134362aae223ec2e50dfd7c8a2a56fdc70a0
+  sha256: 6f2288e8b39cbce4cdb83bb2410b4ce6175e610d79294acd28c1fe44770d2be1
 
 build:
   number: 0
@@ -32,7 +32,7 @@ requirements:
     - numpy >=1.26,<3
     - packaging >=23.1
     - python >={{ python_min }}
-    - qcs-sdk-python >=0.20.1,<0.22
+    - qcs-sdk-python >=0.31.1,<0.32.0
     - rpcq >=3.11.0,<4.0.0
     - scipy >=1.11.0,<2.0.0
     - tenacity >=8.2.2,<9.0.0
